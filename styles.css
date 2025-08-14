@@ -319,6 +319,12 @@ html { scroll-behavior: smooth; }
 .toast.error { border-color: color-mix(in srgb, #ef4444 50%, var(--border)); }
 .toast .icon { width: 18px; height: 18px; display: inline-block; }
 
+/* Social links */
+.social-links { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: .6rem; }
+.social { display: inline-flex; align-items: center; gap: .45rem; color: var(--muted); text-decoration: none; border: 1px solid var(--border); border-radius: .7rem; padding: .45rem .6rem; background: color-mix(in srgb, var(--panel) 92%, transparent); }
+.social:hover { color: var(--brand); border-color: color-mix(in srgb, var(--brand) 40%, var(--border)); box-shadow: var(--shadow); }
+.social .icon { width: 16px; height: 16px; opacity: .95; }
+
 @media (max-width: 720px) {
     .form-grid { grid-template-columns: 1fr; }
 }
