@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0f172a" />
+    <title>Abdulrahman Moez</title>
+
+    <meta name="description" content="Portfolio of Abdulrahman Moez — Back End Developer with Instructional Technology background. Python, Django, REST APIs, MySQL." />
+    <link rel="icon" href="assets/favicon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Abdulrahman Moez — Back End Developer" />
+    <meta property="og:description" content="Back-End Developer specializing in Python, Django, REST APIs, MySQL. Blending software engineering with instructional technology." />
+    <meta property="og:image" content="assets/Interactive_Python_Programming_Course.jpg" />
+    <meta property="og:url" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Abdulrahman Moez — Back End Developer" />
+    <meta name="twitter:description" content="Back-End Developer specializing in Python, Django, REST APIs, MySQL." />
+    <meta name="twitter:image" content="assets/Interactive_Python_Programming_Course.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-elevate>
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="assets/professional_picture.png" alt="Abdulrahman Moez headshot" class="brand-avatar" />
+                <div class="brand-text">
+                    <strong class="brand-name">Abdulrahman Moez</strong>
+                    <span class="brand-role">Back End Developer · Instructional Technology</span>
+                </div>
+            </div>
+
+            <nav class="nav" aria-label="Primary" role="dialog" aria-modal="true">
+                <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul id="nav-menu" class="nav-list">
+                    <li class="nav-profile" aria-hidden="true">
+                        <div class="nav-profile-inner">
+                            <img class="nav-profile-avatar" src="assets/professional_picture.png" alt="" />
+                            <div class="nav-profile-text">
+                                <strong>Abdulrahman Moez</strong>
+                                <small>Back End Developer</small>
+                            </div>
+                            <button class="nav-close" id="nav-close" aria-label="Close menu">×</button>
+                        </div>
+                        <div class="nav-social">
+                            <a href="https://github.com/AbdulrahmanMoez" target="_blank" rel="noopener" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                                    <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.81 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.9 0-1.3.46-2.36 1.22-3.19-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.22a11.5 11.5 0 0 1 6 0c2.3-1.54 3.29-1.22 3.29-1.22.65 1.65.24 2.87.12 3.17.76.83 1.22 1.89 1.22 3.19 0 4.58-2.81 5.6-5.49 5.9.43.37.81 1.1.81 2.22 0 1.6-.01 2.88-.01 3.27 0 .32.22.69.83.58A12 12 0 0 0 12 .5Z"/>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#contact" aria-label="Contact">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                                    <path d="M12 12.713l-11.99-7.2v13.2c0 .994.806 1.8 1.8 1.8h20.38c.994 0 1.8-.806 1.8-1.8v-13.2l-11.99 7.2zm11.99-9.913c0-.994-.806-1.8-1.8-1.8H1.81c-.994 0-1.8.806-1.8 1.8l12 7.2 11.99-7.2z"/>
+                                </svg>
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="actions">
+                <button id="theme-toggle" class="btn icon-btn" aria-label="Toggle theme" title="Toggle theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M21.64 13a1 1 0 0 0-1.05-.14A8 8 0 0 1 11.14 3.41a1 1 0 0 0-1.19-1.3A10 10 0 1 0 22 14a1 1 0 0 0-.36-1z"/></svg>
+                </button>
+                <a class="btn primary header-cta" href="#contact" title="Contact">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                        <path d="M20 4H4c-1.1 0-2 .9-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <span>Let's get in touch</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div id="nav-overlay" class="overlay" hidden></div>
+
+    <main id="main">
+        <section class="hero" id="home">
+            <div class="container hero-grid" data-reveal>
+                <div class="hero-copy">
+                    <h1>Building robust back-end systems and meaningful learning experiences</h1>
+                    <p class="lead">Back-End Developer — blending software engineering with instructional technology to build scalable, user-centric solutions.</p>
+                    <div class="cta-row">
+                        <a class="btn primary" href="#projects">View Projects</a>
+                        <a class="btn ghost" href="https://github.com/AbdulrahmanMoez?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <div class="avatar-frame">
+                        <img src="assets/professional_picture.png" alt="Portrait of Abdulrahman Moez" width="512" decoding="async" fetchpriority="high" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container" data-reveal>
+                <div class="section-header">
+                    <h2>Summary</h2>
+                    <address class="location" aria-label="Location">
+                        <a href="https://maps.google.com/?q=Cairo,Egypt" target="_blank" rel="noopener">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                                <path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+                            </svg>
+                            <span>Cairo, Egypt</span>
+                        </a>
+                    </address>
+                </div>
+                <div class="section-intro">
+                    <p class="prose">
+                        Passionate Back-End Developer with a unique background in Instructional Technology, combining technical expertise with educational innovation to create functional and user-centric solutions. Extensive training in Python, Django, and database management using MySQL, specializing in REST API implementation and robust server-side application development.
+                    </p>
+                    <p class="prose">
+                        Strong collaboration and communication abilities developed through intensive professional programs enable effective teamwork in dynamic environments. A comprehensive blend of technical proficiency and essential soft skills for delivering exceptional backend solutions and educational technology experiences.
+                    </p>
+                </div>
+
+                <h3 class="eyebrow">Key strengths</h3>
+                <ul class="chips">
+                    <li class="chip"><strong>Technical Expertise</strong><span>Python, Django, REST APIs, MySQL</span></li>
+                    <li class="chip"><strong>Educational Innovation</strong></li>
+                    <li class="chip"><strong>Multilingual</strong><span>Arabic (Native), English (Professional)</span></li>
+                    <li class="chip"><strong>Continuous Learning</strong></li>
+                    <li class="chip"><strong>Project Leadership</strong></li>
+                    <li class="chip"><strong>Cross‑functional Collaboration</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container" data-reveal>
+                <div class="section-header">
+                    <h2>Skills & Expertise</h2>
+                </div>
+                <div class="skill-groups">
+                    <article class="card">
+                        <h3>Back-End Development</h3>
+                        <div class="badges">
+                            <span class="badge">Python</span>
+                            <span class="badge">Django</span>
+                            <span class="badge">REST APIs</span>
+                            <span class="badge">MySQL</span>
+                            <span class="badge">Git/GitHub</span>
+                            <span class="badge">Linux</span>
+                            <span class="badge">Bash</span>
+                            <span class="badge">Cloud Basics</span>
+                            <span class="badge">Testing</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>Educational Technology</h3>
+                        <div class="badges">
+                            <span class="badge">LMS · Moodle</span>
+                            <span class="badge">Articulate 360</span>
+                            <span class="badge">E‑Learning Design</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>Creative & Design</h3>
+                        <div class="badges">
+                            <span class="badge">Adobe Suite</span>
+                            <span class="badge">Canva</span>
+                            <span class="badge">Photopea</span>
+                            <span class="badge">UI/UX Principles</span>
+                            <span class="badge">Office & Google Workspace</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>Soft Skills</h3>
+                        <div class="badges">
+                            <span class="badge">Leadership</span>
+                            <span class="badge">Agile</span>
+                            <span class="badge">Communication</span>
+                            <span class="badge">Teamwork</span>
+                            <span class="badge">Research</span>
+                            <span class="badge">Innovation</span>
+                            <span class="badge">Pair Programming</span>
+                            <span class="badge">Project Planning</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>Languages</h3>
+                        <div class="badges">
+                            <span class="badge">Arabic — Native</span>
+                            <span class="badge">English — Professional</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container" data-reveal>
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <a class="btn ghost" href="https://github.com/AbdulrahmanMoez?tab=repositories" target="_blank" rel="noopener">View all on GitHub</a>
+                </div>
+                <div class="card-grid">
+                    <article class="card project">
+                        <div class="project-media">
+                            <img src="assets/github_logo.jpg" alt="GitHub Portfolio" width="1280" height="720" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="project-body">
+                            <h3>GitHub Portfolio & Projects Repository</h3>
+                            <p>Explore a comprehensive collection of backend apps, educational technology tools, and experiments. Focus on clean, well-documented code in Python and Django with REST APIs and MySQL.</p>
+                            <div class="project-tags">
+                                <span class="badge">Python</span>
+                                <span class="badge">Django</span>
+                                <span class="badge">REST</span>
+                                <span class="badge">MySQL</span>
+                            </div>
+                            <a class="btn small cta" href="https://github.com/AbdulrahmanMoez?tab=repositories" target="_blank" rel="noopener" title="Open GitHub repositories">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="currentColor">
+                                    <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.81 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.9 0-1.3.46-2.36 1.22-3.19-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.22a11.5 11.5 0 0 1 6 0c2.3-1.54 3.29-1.22 3.29-1.22.65 1.65.24 2.87.12 3.17.76.83 1.22 1.89 1.22 3.19 0 4.58-2.81 5.6-5.49 5.9.43.37.81 1.1.81 2.22 0 1.6-.01 2.88-.01 3.27 0 .32.22.69.83.58A12 12 0 0 0 12 .5Z"/>
+                                </svg>
+                                <span>View GitHub</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="card project">
+                        <div class="project-media">
+                            <img src="assets/Interactive_Science_Textbook.jpg" alt="Interactive Science Textbook" width="1280" height="720" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="project-body">
+                            <h3>Interactive Science Textbook (AR)</h3>
+                            <p>Immersive Arabic science curriculum featuring AR, 3D models, and QR‑code integrations to enhance student engagement and understanding.</p>
+                            <div class="project-tags">
+                                <span class="badge">Augmented Reality</span>
+                                <span class="badge">3D</span>
+                                <span class="badge">Interactive Media</span>
+                            </div>
+                            <a class="btn small cta" href="https://rise.articulate.com/share/OkWFm-ur5S4CFq5ipODAxph-UZ06fprz" target="_blank" rel="noopener" title="Open interactive textbook">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="currentColor">
+                                    <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"/>
+                                    <path d="M5 5h6v2H7v10h10v-4h2v6H5z"/>
+                                </svg>
+                                <span>Open</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="card project">
+                        <div class="project-media">
+                            <img src="assets/Interactive_Python_Programming_Course.jpg" alt="Interactive Python Course" width="1280" height="720" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="project-body">
+                            <h3>Interactive Python Programming Course (Arabic)</h3>
+                            <p>Beginner‑friendly Python course covering variables, data types, control structures, functions, and problem‑solving with hands‑on exercises.</p>
+                            <div class="project-tags">
+                                <span class="badge">Python</span>
+                                <span class="badge">Education</span>
+                                <span class="badge">Interactive</span>
+                            </div>
+                            <a class="btn small cta" href="https://drive.google.com/file/d/12_JufDmxSouRjUuLvgrUGtVsMV1vXkRm/view?usp=drivesdk" target="_blank" rel="noopener" title="Access the course">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="currentColor">
+                                    <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"/>
+                                    <path d="M5 5h6v2H7v10h10v-4h2v6H5z"/>
+                                </svg>
+                                <span>Access</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container" data-reveal>
+                <div class="section-header">
+                    <h2>Education</h2>
+                </div>
+                <article class="card edu">
+                    <div class="edu-media">
+                        <img src="assets/al-azhar-university-logo.png" alt="Al-Azhar University Logo" width="64" height="64" loading="lazy" decoding="async" />
+                        <img src="assets/Faculty_of_Education_logo.png" alt="Faculty of Education Logo" width="64" height="64" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="edu-body">
+                        <h3>Bachelor's in Educational/Instructional Technology</h3>
+                        <p class="muted">Al-Azhar University — Faculty of Education in Cairo</p>
+                        <p>Graduation: July 21, 2025 · Specialization in Educational Technology & Digital Learning Solutions</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <div class="container" data-reveal>
+                <div class="section-header">
+                    <h2>Certifications</h2>
+                </div>
+                <div class="accordion">
+                    <details open>
+                        <summary>Completed</summary>
+                        <ul class="cert-list">
+                            <li>
+                                <div>
+                                    <strong>Back-end Web Development Program</strong> — ALX Africa (2024)
+                                </div>
+                                <a href="https://intranet.alxswe.com/certificates/hYMZSr5enx" target="_blank" rel="noopener">View Certificate</a>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Professional Foundations Program</strong> — ALX Africa (2024)
+                                </div>
+                                <a href="https://intranet.alxswe.com/certificates/JfrT6FC9m2" target="_blank" rel="noopener">View Certificate</a>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Agile Project Management</strong> — HP LIFE (2024)
+                                </div>
+                                <a href="https://www.life-global.org/certificate/5e676d60-5943-4b2f-a6c2-aada0717005e" target="_blank" rel="noopener">View Certificate</a>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Python Backend Web Development (with Django)</strong> — freeCodeCamp (2024)
+                                </div>
+                                <a href="https://youtu.be/jBzwzrDvZ18" target="_blank" rel="noopener">Watch</a>
+                            </li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>In Progress</summary>
+                        <ul class="cert-list">
+                            <li>
+                                <div>
+                                    <strong>Back-end ProDev Program</strong> — ALX Africa
+                                </div>
+                                <a href="https://www.alxafrica.com/wp-content/uploads/2024/11/ProDev-Back-End-Catalogue_compressed.pdf" target="_blank" rel="noopener">Course Link</a>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Django for Everybody</strong> — Coursera
+                                </div>
+                                <a href="https://www.coursera.org/learn/django-build-web-apps" target="_blank" rel="noopener">Course Link</a>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Python Mastering Course</strong> — Elzero Web School
+                                </div>
+                                <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs" target="_blank" rel="noopener">Playlist</a>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container" data-reveal>
+                <div class="section-header">
+                    <h2>Contact</h2>
+                </div>
+                
+
+                <form id="contact-form" class="contact-form card" action="https://formspree.io/f/xyzpzovz" method="POST">
+                    <div class="form-status" id="form-status" aria-live="polite"></div>
+                    <div class="form-grid">
+                        <div class="field" id="field-name">
+                            <label for="name">Your name</label>
+                            <input type="text" id="name" name="name" autocomplete="name" placeholder="ex. kareem" required minlength="2" />
+                            <small class="error">Please enter your name (min 2 characters)</small>
+                        </div>
+                        <div class="field" id="field-email">
+                            <label for="email">Your email</label>
+                            <input type="email" id="email" name="email" autocomplete="email" placeholder="yourmail@example.com" required />
+                            <small class="error">Enter a valid email address</small>
+                        </div>
+                        <div class="field full" id="field-message">
+                            <label for="message">Your message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="your message..." required minlength="10"></textarea>
+                            <small class="error">Message must be at least 10 characters</small>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary" id="submit-btn"><span class="btn-label">Send</span></button>
+                    </div>
+                    <p class="form-hint muted">I'll reply via email. Your info is kept private.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Abdulrahman Moez</p>
+            <nav aria-label="Footer">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="fab-to-top" aria-label="Back to top" title="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.59 5.58L20 12l-8-8-8 8z"/>
+        </svg>
+    </button>
+
+    <script src="app.js" defer></script>
+</body>
+<!-- Built as a dependency-free, fast static site so it works anywhere. -->
+</html>
+
+
