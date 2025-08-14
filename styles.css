@@ -252,6 +252,14 @@ small { font-size: .92rem; }
 
 .edu { display: grid; grid-template-columns: 140px 1fr; gap: 1rem; align-items: center; }
 .edu-media { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; }
+
+/* Mobile education layout */
+@media (max-width: 720px) {
+    .edu { grid-template-columns: 1fr; gap: 1rem; align-items: start; }
+    .edu-media { flex-direction: column; gap: .5rem; align-items: center; }
+    .edu-media img { width: 56px; height: 56px; }
+    .edu-body { text-align: center; }
+}
 .edu-media img {
     width: 64px; height: 64px; object-fit: contain;
     background: linear-gradient(180deg, color-mix(in srgb, var(--panel) 96%, transparent), color-mix(in srgb, var(--panel) 86%, transparent));
