@@ -356,4 +356,23 @@ document.getElementById('year').textContent = String(new Date().getFullYear());
     }
 })();
 
+// Certifications Timeline
+(function () {
+    // The timeline is now static HTML, so we only need to handle interactive effects
+    // All certifications can be edited directly in the HTML file
+    
+    function initializeTimelineEffects() {
+        // Add any interactive effects here if needed in the future
+        // For now, the CSS handles all the hover effects and animations
+        console.log('Certifications timeline loaded - edit certifications directly in HTML');
+    }
+
+    // Initialize when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializeTimelineEffects);
+    } else {
+        initializeTimelineEffects();
+    }
+})();
+
 
