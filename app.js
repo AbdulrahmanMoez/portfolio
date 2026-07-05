@@ -1,24 +1,4 @@
-// Theme toggle with localStorage persistence
-(function () {
-    const themeToggleButton = document.getElementById('theme-toggle');
-    const prefersLight = window.matchMedia('(prefers-color-scheme: light)');
-
-    function applyTheme(theme) {
-        if (theme === 'light') {
-            document.documentElement.classList.add('theme-light');
-        } else {
-            document.documentElement.classList.remove('theme-light');
-        }
-    }
-
-    const storedTheme = localStorage.getItem('theme');
-    applyTheme(storedTheme || (prefersLight.matches ? 'light' : 'dark'));
-
-    themeToggleButton?.addEventListener('click', () => {
-        const isLight = document.documentElement.classList.toggle('theme-light');
-        localStorage.setItem('theme', isLight ? 'light' : 'dark');
-    });
-})();
+// Theme is dark-only; removed light-mode toggle.
 
 // Mobile nav toggle
 (function () {
@@ -117,33 +97,6 @@
     });
 })();
 
-// Copy email to clipboard and toast
-(function () {
-    const copyBtn = document.getElementById('copy-email');
-    const emailLink = document.getElementById('email-link');
-    copyBtn?.addEventListener('click', async () => {
-        const email = emailLink?.textContent?.trim() || '';
-        try {
-            await navigator.clipboard.writeText(email);
-            showToast('Email copied');
-        } catch {
-            showToast('Unable to copy');
-        }
-    });
-
-    function showToast(message) {
-        const toast = document.createElement('div');
-        toast.textContent = message;
-        Object.assign(toast.style, {
-            position: 'fixed', bottom: '20px', left: '50%', transform: 'translateX(-50%)',
-            background: 'rgba(2,6,23,0.9)', color: 'white', padding: '8px 12px', borderRadius: '10px',
-            border: '1px solid rgba(56,189,248,0.4)', zIndex: 2000, boxShadow: '0 10px 30px rgba(0,0,0,0.2)'
-        });
-        document.body.appendChild(toast);
-        setTimeout(() => toast.remove(), 1500);
-    }
-})();
-
 // Year update
 document.getElementById('year').textContent = String(new Date().getFullYear());
 
@@ -185,19 +138,21 @@ document.getElementById('year').textContent = String(new Date().getFullYear());
 
     sections.forEach((sec) => spy.observe(sec));
     // Initial state in case first section is already in view on load
-    const current = sections.find((sec) => {
-        const rect = sec.getBoundingClientRect();
-        return rect.top <= window.innerHeight * 0.55 && rect.bottom >= window.innerHeight * 0.45;
-    });
-    if (current) {
-        const link = links.find((a) => a.getAttribute('href') === '#' + current.id);
-        if (link) {
-            links.forEach((l) => l.classList.remove('is-active'));
-            link.classList.add('is-active');
-            links.forEach((l) => l.removeAttribute('aria-current'));
-            link.setAttribute('aria-current', 'true');
+    window.requestAnimationFrame(() => {
+        const current = sections.find((sec) => {
+            const rect = sec.getBoundingClientRect();
+            return rect.top <= window.innerHeight * 0.55 && rect.bottom >= window.innerHeight * 0.45;
+        });
+        if (current) {
+            const link = links.find((a) => a.getAttribute('href') === '#' + current.id);
+            if (link) {
+                links.forEach((l) => l.classList.remove('is-active'));
+                link.classList.add('is-active');
+                links.forEach((l) => l.removeAttribute('aria-current'));
+                link.setAttribute('aria-current', 'true');
+            }
         }
-    }
+    });
 })();
 
 // Floating back-to-top behavior
